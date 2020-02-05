@@ -20,7 +20,7 @@ header
     justify-content: space-between;
     align-items: flex-end;
     background-color:#242f6e;
-    padding: 1% 5%;
+    padding: 0% 0%;
 }
 
 .container{
@@ -41,13 +41,14 @@ header
     flex-direction: row;
     align-items: baseline;
     height: 90px;
-    width: 50px;
+    width: 10px;
 }
 
 #logo img
 {
     width: 162 px;
-    height: 90px;
+    height: 38px;
+    padding: 33px;
 }
 
 
@@ -77,7 +78,7 @@ nav a
 
 nav a:hover
 {
-    color: #FBFF3B;
+    color: #f1c933;
     text-transform: uppercase;
 }
 
@@ -107,18 +108,94 @@ nav a:hover
 }
 
 /********************* Section & Aside *********************/
+/*----------------------------------- Début 2émé Section ----------------------------------*/
+.get{
+    color: #200486;
+    text-align: center;
+    font-size: 1.6em;
+    text-decoration:  underline #f1c933;
+    margin: 5px;
+}
 
-section
+h4.get:hover{
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    -webkit-animation: bright 2s infinite;
+            animation: bright 2s infinite;
+            text-decoration: none;
+  }
+  
+  @-webkit-keyframes bright {
+    from {
+      -webkit-mask-position: 150%;
+    }
+  
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+
+.fly{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:15px;
+    margin: 10px;
+    margin-bottom: -35px;
+    padding: 0px;
+    
+
+}
+.destination {
+    position:relative;
+    /* height:281px;
+    width:450px;
+    margin:0 auto; */
+  }
+  
+  .destination img {
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .destination img.bottom:hover {
+    opacity:0;
+  }
+.trip{
+    transform: translateY(513px);
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.service{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+    color: #200486;
+    text-decoration: underline #f1c933;
+}
+
+
+/* section
 {
     display: flex;
     margin-top: 100px;
     margin-bottom: 100px;
     background-image: url("images/cloud.jpg") no-repeat ;
     
-}
+} */
 
 .flip{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     flex-direction: row-reverse;
+    margin: 10px;
     
 }
 
@@ -154,8 +231,8 @@ aside
     flex: 3.2;
     position: relative;
     background: url("images/air-journal_Ryanair-equipage.jpg");
+    width: 50%.;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     border-radius: 5px;
     padding: 10px;
     color: white;
@@ -180,8 +257,24 @@ aside img
      
 }
 
-/********************* Footer *********************/
 
+
+.vid{
+    transform: translateY(567px);
+  
+}
+video{
+    object-fit: fill;
+    margin-top: 10px;
+}
+
+
+/********************* Footer *********************/
+footer{
+    display: block;
+    transform: translateY(562px);
+    
+}
 .footer
 {
     display: flex;
@@ -192,6 +285,7 @@ aside img
 .footer p, .footer ul
 {
     font-size: 0.8em;
+    
 }
 
 
@@ -208,7 +302,7 @@ aside img
     width: 35%;
 }
 h3{
-    color: rgb(252, 255, 86);
+    color: #f1c933;
     text-transform: uppercase;
 }
 #adress a{
@@ -239,6 +333,7 @@ h3{
     padding: 8px 15px;
     margin-top: 15px;
     text-transform: uppercase;
+    
 }
 
 .social_container {
@@ -261,7 +356,7 @@ h3{
 }
 
 .copyright p {
-    color: rgb(244, 247, 65);
+    color:#f1c933;
     margin: auto;
     text-align: center;
 }
